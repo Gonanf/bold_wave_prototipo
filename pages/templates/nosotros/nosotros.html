@@ -1,0 +1,36 @@
+{% extends "index/index.html" %}
+{% load static %}
+{% block main %}
+
+		  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+	      <div class="carousel-inner">
+	        <div class="carousel-item active">
+	          <img src="{% static 'index/img/ban1.jpg' %}" class="d-block w-100">
+	        </div>
+	        <div class="carousel-item">
+	          <img src="{% static 'index/img/ban2.jpg' %}" class="d-block w-100">
+	        </div>
+	        <div class="carousel-item">
+	          <img src="{% static 'index/img/ban3.jpg' %}" class="d-block w-100">
+	        </div>
+	      </div>
+	      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+	        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	        <span class="visually-hidden">Previous</span>
+	      </button>
+	      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+	        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	        <span class="visually-hidden">Next</span>
+	      </button>
+	    </div>
+
+  	<center><h1 class="us">¿Quienes Somos?</h1></center>
+   		 <p class="info-text"><strong>En BOLD WAVE somos un equipo joven y apasionado por la tecnología, la creatividad y la innovación. Nos une el deseo de crear experiencias digitales que inspiren, conecten y dejen huella. Creemos que las ideas valientes merecen ser escuchadas, y trabajamos cada día para darles forma con diseño, código y corazón.</p></strong>
+
+ 	<center><h1 class="us">Nuestro Proposito</h1></center>
+    	<p class="info-text"><strong>Ser ese impulsoque transforma ideas en realidades digitales con identidad, fuerza y sentido. Nos proponemos acompañar a emprendedores, marcas y organizaciones en su camino hacia el mundo digital, brindando soluciones que no solo se vean bien, sino que también funcionen de forma ágil, accesible y coherente con sus valores.
+
+		Trabajamos para que cada sitio, cada diseño y cada línea de código refleje lo que hay detrás de una idea: esfuerzo, pasión y visión. Queremos que nuestras creaciones no pasen desapercibidas, que conecten con las personas, que comuniquen de forma clara y auténtica. En cada proyecto buscamos desafiar lo común, adaptarnos a lo nuevo y dejar una huella positiva en el entorno digital.
+
+		Porque para nosotras y nosotros, hacer diseño y desarrollo web no es solo construir páginas: es construir puentes entre ideas valientes y el mundo.</p></strong>
+		{% endblock %}

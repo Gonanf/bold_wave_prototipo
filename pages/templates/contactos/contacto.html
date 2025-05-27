@@ -1,0 +1,22 @@
+{% extends "index/index.html" %}
+
+{% block main %}
+  		<form>
+		<label>Apellido</label>
+		<input type="text">
+		<label>Nombre</label>
+		<input type="text" size="30" required/>
+		<label>Domicilio</label>
+		<input type="text">
+		<label>Localidad</label>
+		<input type="text">
+		<label>Telefono</label>
+		<input type="number">
+		<label>Email</label>
+		<input type="email">
+		<button class="boton1" type="submit">
+			<a>Enviar</a>
+		</button>
+		<button type="reset">borrar</button>
+	</form>
+	{% endblock %}
