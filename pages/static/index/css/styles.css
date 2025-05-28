@@ -49,6 +49,7 @@ body {
     gap: 10px; /* separamos los botones */
     z-index: 1000;
     }
+
 .top-bar button{ 
     width: 260px;
     background-color:#BFA89E;

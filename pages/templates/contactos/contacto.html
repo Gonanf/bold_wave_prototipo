@@ -1,19 +1,21 @@
 {% extends "index/index.html" %}
 
 {% block main %}
-  		<form>
+  		<form id="contactar" method="POST" action="contactar/">
+			{% csrf_token %}
+			{{ form }}
+			<label>Nombre</label>
+		<input type="text" size="30" required name="nombre">
 		<label>Apellido</label>
-		<input type="text">
-		<label>Nombre</label>
-		<input type="text" size="30" required/>
+		<input type="text" size="30" name="apellido"/>
 		<label>Domicilio</label>
-		<input type="text">
+		<input type="text" name="domicilio">
 		<label>Localidad</label>
-		<input type="text">
+		<input type="text" name="localidad">
 		<label>Telefono</label>
-		<input type="number">
+		<input type="number" name="telefono">
 		<label>Email</label>
-		<input type="email">
+		<input type="email" required name="email">
 		<button class="boton1" type="submit">
 			<a>Enviar</a>
 		</button>

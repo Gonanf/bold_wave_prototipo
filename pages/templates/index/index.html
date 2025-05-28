@@ -17,7 +17,10 @@
 	</h1>
 
 	<div class="top-bar">
- 	 	<button>Iniciar sesión</button>
+		{% if nombre %}
+		<h4 style="color: white;">Bienvenido {{ nombre }}</h4>
+		{% endif %}
+ 	 	<button><a href="{% url 'login_page' %}">Iniciar sesión</a></button>
  	 	<button>Registrarse</button>
 	</div>
 	

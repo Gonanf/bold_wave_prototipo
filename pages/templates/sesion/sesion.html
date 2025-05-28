@@ -1,0 +1,16 @@
+{% extends "index/index.html" %}
+
+{% block main %}
+  		<form id="login" method="POST" action="login/">
+			{% csrf_token %}
+			{{ form }}
+			<label>Usuario</label>
+		<input type="text" size="30" required name="usuario">
+		<label>Contraseña</label>
+		<input type="text" size="30" name="contraseña"/>
+		<button class="boton1" type="submit">
+			<a>Enviar</a>
+		</button>
+		<button type="reset">borrar</button>
+	</form>
+	{% endblock %}

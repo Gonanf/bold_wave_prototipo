@@ -112,6 +112,15 @@ USE_I18N = True
 USE_TZ = True
 
 
+RECIPIENTS_EMAIL = ['consultas@boldwave.org']   
+DEFAULT_FROM_EMAIL = 'consultas@boldwave.org'  
+SERVER_EMAIL = 'consultas@boldwave.org' 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'consultas@boldwave.org'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 

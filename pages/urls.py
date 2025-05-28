@@ -19,6 +19,10 @@ from . import views
 
 urlpatterns = [
     path('', views.index,name='index'),
+    path('<str:nombre>', views.index,name='index'),
     path('nosotros/', views.nosotros,name='nosotros'),
     path('contactos/', views.contactos,name='contactos'),
+    path('login_page/',views.login_page,name='login_page'),
+    path('login_page/login/',views.login,name='login'),
+    path('contactos/contactar/',views.contactar,name="contactar"),
 ]
